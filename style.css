@@ -18,7 +18,7 @@
 }
 
 
-header{
+.header, .banner{
     justify-items: center;
     width: 1600px;
     margin: 0 auto;
@@ -33,7 +33,7 @@ header{
     padding-right: 12.5rem;
 }
 
-.nav-title{
+.nav-title, .banner-titel{
     font-size: 2.5rem;
 }
 
@@ -67,6 +67,96 @@ header{
     -webkit-text-fill-color: transparent;
 }
 
+
+/* Banner Related section */
+.banner{
+    background-image: url("assets/hero-bg.png");
+    height: 760px;
+    border-top: 1px solid rgb(64, 63, 63);
+}
+
+.banner-container{
+    width: 550px;
+    height: 558px;
+
+}
+
+.banner-img-container{
+    width: 350px;
+    height: 350px;
+    /* background-image: url("assets/hero-circle.png"); */
+}
+
+.banner-btn-1{
+    position: absolute;
+    width: 75px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF88;
+    margin-top: 135px;
+    margin-left: 370px;
+    border-radius: 16px;
+}
+.banner-img-1{
+    width: 350px;
+    height: 350px;
+    padding: 100px 100px 40px 100px;
+}
+
+.banner-img{
+    position: absolute;
+    /* background-image: url("assets/hero-circle.png"); */
+    width: 160px;
+    height: 200px;;
+    margin-top: -320px;
+    margin-left: 190px;
+    border: none;
+    background: none;
+    border-radius: 100px;
+}
+
+.banner-titel{
+    font-size: 60px;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.banner-description{
+    width: 550px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.banner-btn-2{
+    width: 13rem;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.banner-btn-img-2 {
+    padding-right: 10px;
+}
+
+.banner-btn-img-3{
+    background: none;
+    border: 1px solid#00FF88;
+    border-radius: 50px;
+}
+
+
+
 @media screen and (max-width: 576px) {
     .navbar{
         max-width: 100%;
@@ -74,6 +164,12 @@ header{
         display: grid;
         grid-template-columns: 1 1fr;
     }
+
+    .btn-container{
+        align-items: center;
+        flex-direction: column;
+    }
+
 }
 
 
