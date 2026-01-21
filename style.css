@@ -7,8 +7,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-/* styles for navbar */
+} 
+/* styles for navbar & body*/
 .bg-color{
     background-color: rgba(26, 11, 46, 1);
 }
@@ -18,24 +18,47 @@
 }
 
 
-.header, .banner{
-    justify-items: center;
+#display{
     width: 1600px;
     margin: 0 auto;
-}
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    width: 1600px;
-    height: 5.8rem;
-    color: white;
-    padding-left: 12.5rem;
-    padding-right: 12.5rem;
 }
 
 .nav-title, .banner-titel{
     font-size: 2.5rem;
 }
+
+.color-text{
+    background:linear-gradient(to right, #F7E93F 0%, #F809B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.smal-text{
+    color: rgb(138, 134, 134);
+    font-size: 16px;
+    font-weight: 400;  
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+/* styles for navbar */
+.header-container{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 92px;
+    border-bottom: 1px solid rgb(64, 63, 63);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
 
 .list{
     display: flex;
@@ -61,30 +84,26 @@
 .btn-arrow{
     padding-left: 8px;
 }
-.color-text{
-    background:linear-gradient(to right, #F7E93F 0%, #F809B4 51%, #9100F8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 
 /* Banner Related section */
 .banner{
     background-image: url("assets/hero-bg.png");
     height: 760px;
-    border-top: 1px solid rgb(64, 63, 63);
+    /* border-top: 1px solid rgb(64, 63, 63); */
 }
 
 .banner-container{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     width: 550px;
     height: 558px;
-
 }
 
 .banner-img-container{
     width: 350px;
     height: 350px;
-    /* background-image: url("assets/hero-circle.png"); */
 }
 
 .banner-btn-1{
@@ -106,7 +125,6 @@
 
 .banner-img{
     position: absolute;
-    /* background-image: url("assets/hero-circle.png"); */
     width: 160px;
     height: 200px;;
     margin-top: -320px;
@@ -126,11 +144,9 @@
 
 .banner-description{
     width: 550px;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 10px;
 }
+
+
 .btn-container{
     display: flex;
     justify-content: center;
@@ -155,6 +171,51 @@
     border-radius: 50px;
 }
 
+.about-containter{
+    align-content: center;
+    width: 1200px;
+    height: 646px;
+    margin: 0 auto;
+}
+
+.about{
+    justify-items: center;
+    height: 222px;
+    border-bottom: 1px solid rgb(107, 105, 105);
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+
+.about-title {
+    align-items: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto;
+}
+
+.card-containter{
+    justify-content: space-between;
+    align-items: center;
+    height: 94px;
+    gap: 80px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.card{
+    text-align: center;
+    font-size: 40px;
+    width: 240px;
+    margin: 0 auto;
+}
+.color-h{
+    color: #00FF88;
+}
+
+/* Styles for advertise section */
+
 
 
 @media screen and (max-width: 576px) {
@@ -169,7 +230,6 @@
         align-items: center;
         flex-direction: column;
     }
-
 }
 
 
