@@ -8,7 +8,7 @@
     font-style: normal;
 }
 
-/* styles for navbar & body*/
+/* shared styles*/
 .bg-color {
     background-color: rgba(26, 11, 46, 1);
 }
@@ -45,6 +45,10 @@
     display: flex;
 }
 
+.cursor{
+    cursor: pointer;
+}
+
 /* styles for navbar */
 .header-container {
     justify-content: center;
@@ -52,7 +56,7 @@
     margin: 0 auto;
     width: 1200px;
     height: 92px;
-    border-bottom: 1px solid rgb(64, 63, 63);
+    /* border-bottom: 1px solid rgb(64, 63, 63); */
 }
 
 .navbar {
@@ -83,6 +87,7 @@
     border: none;
 }
 
+
 .btn-arrow {
     padding-left: 8px;
 }
@@ -91,8 +96,10 @@
 /* Banner Related section */
 .banner {
     background-image: url("assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
     height: 760px;
-    /* border-top: 1px solid rgb(64, 63, 63); */
+    border-top: 1px solid rgb(64, 63, 63);
 }
 
 .banner-container {
@@ -106,6 +113,16 @@
 .banner-img-container {
     width: 350px;
     height: 350px;
+}
+
+.banner-btn-primary{
+    width: 9.4rem;
+    height: 2.8rem;
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
 }
 
 .banner-btn-1 {
@@ -206,14 +223,14 @@
 .card-containter {
     justify-content: space-between;
     align-items: center;
-    height: 94px;
+    /* height: 94px; */
     gap: 80px;
-    margin-top: 60px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .card {
     text-align: center;
+    padding-top: 60px;
     font-size: 40px;
     width: 240px;
     margin: 0 auto;
@@ -396,6 +413,8 @@ iframe {
 footer{
     height: 412px;
     background-image: url("assets/footer-bg.png");
+    background-size: cover;
+    background-position: center;
 }
 .footer-container{
     justify-content: center;
@@ -436,81 +455,162 @@ footer{
     #display {
     width: 100%;
     margin: 0 auto;
-    }
-    .header-container {
-    margin: 0 auto;
-    width: 100%;
+}
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 
-    .navbar{
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    .header-container {
+        width: 100%;
+        padding: 0 20px;
+        background-size: contain;
     }
+
     .list, .btn-primary {
         display: none;
-        
     }
+
     .hamburger-menu {
+        padding-top: 40px;
         display: block;
     }
 
-    .banner-container {
-        width: 100%;
-    }
-
-    .banner-img-container {
-    width: 100%;
-    height: 350px;
-    }
-
-    .banner-img-1 {
-        width: auto;
-        height: auto;
-    }
-
-    .banner-img {
-        width: auto;
-    }
-
-    .banner-img-1 {
-        width: 100%;
-        height: auto;
-    }
     .btn-container {
-        width: 100%;
         align-items: center;
         flex-direction: column;
+    }
+
+    .banner-titel{
+        font-size: 3rem;
+    }
+
+    .about-title, .ad-title, .featured-titel, .host-title, .footer-titel {
+        font-size: 2.5rem;
     }
 
     .banner-description {
-        width: 100%;
+        width: 84%;
+        padding: 0 8%;
     }
 
-    .about-containter {
-    align-content: center;
-    width: 100%;
-    height: auto;
+    .about-containter, .advertise-section, .featured-container {
+        width: 90%;
+        padding: 5% 5%;
     }
     .card-containter {
-        flex-direction: column;
+        display: grid;
+        padding: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-top: 24px;
+    }
+
+    /* .card{
+        max-width: 250px;
+    } */
+
+    .about{
+        width: 90%;
+        padding: 0 10px;
+        margin-right: 12px;
+        padding-bottom: 60px;
+    }
+
+    .advertise-section{
+        height: 1500px;
+    }
+
+
+    .advertise-containter{
+        display: grid;
+        grid-template-areas:
+            "ad-card-1"
+            "ad-card-2"
+            "ad-card-3"
+            "ad-card-4"
+            "ad-card-5";
+    }
+    .ad-card-1, .ad-card-2, .ad-card-3, .ad-card-4, .ad-card-5{
+        gap: 5px;
+        padding: 16px;
+    }
+
+    .featured-container{
+        width: 90%;
+        padding: 0 5%;
+        margin-bottom: 20px;
+        height: 2400px;
+    }
+
+    .featured-episode{
+        justify-items: center;
         align-items: center;
-        height: auto;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        padding: 8px;
+    }
+    .ad-E{
+        padding: 0 8px;
+    }
+    .featured-host-container{
+        height: 1400px;
+        padding-top: 460px;
     }
 
-    .advertise-section {
-        height: auto;
+    .host-title{
+        padding-bottom: 40px;
+    }
+    .host-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: right;
+        width: 90%;
+        height: 600px;
+        gap: 20px;
+        padding: 16px;
+        margin: 0 auto;
     }
 
-    .advertise-containter {
-    display: grid;
-    gap: 10px;
-    height: 225px;
-    grid-template-areas:
-        "ad-card-1 ad-card-2"
-        "ad-card-1 ad-card-2"
-        "ad-card-3 ad-card-3"
-        "ad-card-4 ad-card-5"
-        "ad-card-4 ad-card-5";
-}
+    footer{
+        height: 248px;
+    }
+
+    .footer-container{
+        height: 168px;
+        width: 400px;
+        padding: 20px 20px;
+        background-size: contain;
+
+    }
+
+    .footer-titel{
+        width: 219px;
+        font-size: 24px;
+        height: 24px;
+    }
+
+    .gap-list{
+        margin-left: -50px;
+    }
+
+    .footer-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1.6fr);
+        width: 255px;
+        height: 64px;
+        /* padding: 0 72.5px 0px 72.5px; */
+        
+    }
+
+    .apple{
+        width: 150px;
+        margin-right: -90px;
+    }
 }
